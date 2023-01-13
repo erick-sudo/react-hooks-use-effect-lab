@@ -5,14 +5,21 @@
 }
 
 body {
+  margin: 0;
   font-family: "Press Start 2p", cursive;
-  background: rgb(15, 53, 50);
+  
+}
+*{
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
   background: linear-gradient(
     45deg,
-    rgb(4, 39, 37) 100%,
-    rgb(25, 216, 204) 0%,
-    rgb(4, 39, 37) 100%
-  );
+    rgb(4, 39, 37) 0% 30%,
+    rgb(25, 216, 204) 30% 70%,
+    rgb(4, 39, 37) 70% 100%
+  ) no-repeat;
 }
 
 h1,
@@ -38,12 +45,14 @@ button {
 }
 
 main {
+  border: solid 0.5em rgb(25, 216, 204);;
   margin: 4rem auto;
   max-width: 700px;
   height: 500px;
   min-height: 500px;
-  background: white;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.603);
+  /* box-shadow: 4px 4px rgb(25, 216, 204); */
+  /* box-shadow: 4px 4px rgba(0, 0, 0, 0.2); */
 }
 
 section {
@@ -60,4 +69,9 @@ section {
   font-family: monospace;
   width: max-content;
   margin: 0 auto;
+}
+
+.final-results > * {
+  text-align: center;
+  letter-spacing: 5px;
 }

@@ -21,7 +21,7 @@ function Question({ question, onAnswered }) {
     setTimeRemaining(10);
     onAnswered(isCorrect);
   }
-  
+
   if (timeRemaining === 0) {
     handleAnswer(false);
   }

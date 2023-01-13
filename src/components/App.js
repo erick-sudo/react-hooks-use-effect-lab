@@ -48,10 +48,10 @@ function App() {
             onAnswered={handleQuestionAnswered}
           />
         ) : (
-          <>
+          <div className="final-results">
             <h1>Game Over</h1>
             <h2>Total Correct: {score}</h2>
-          </>
+          </div>
         )}
       </section>
     </main>
