@@ -12,7 +12,7 @@ function Question({ question, onAnswered }) {
   useEffect(() => {
     const interval = setInterval(tick , 1000)
 
-    return () => {
+    return function cleanup() {
       clearInterval(interval);
     }
   }, [])
