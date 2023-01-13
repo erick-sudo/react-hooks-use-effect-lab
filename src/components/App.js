@@ -51,6 +51,7 @@ function App() {
           <div className="final-results">
             <h1>Game Over</h1>
             <h2>Total Correct: {score}</h2>
+            <h1 className="score">{Math.round((score/questions.length)*100)}%</h1>
           </div>
         )}
       </section>

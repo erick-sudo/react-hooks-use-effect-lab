@@ -75,3 +75,7 @@ section {
   text-align: center;
   letter-spacing: 5px;
 }
+.score {
+  font-size: 5em;
+  color: rgb(6, 18, 85);
+}
