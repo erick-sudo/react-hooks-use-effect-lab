@@ -1,6 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Question from "./Question";
 import quiz from "../data/quiz";
+
+function Clock() {
+  const [seconds, setSeconds] = useState(0);
+
+  const tick = () => {
+    setSeconds((seconds) => seconds + 1);
+  }
+
+  useEffect(() => {
+    setInterval(tick, 1000);
+  }, []);
+
+  return (
+    <div className="clock">
+      {seconds}
+    </div>
+  )
+}
 
 function App() {
   const [questions, setQuestions] = useState(quiz);
@@ -18,6 +36,8 @@ function App() {
       setScore((score) => score + 1);
     }
   }
+
+  // ---------------------------------------
 
   return (
     <main>

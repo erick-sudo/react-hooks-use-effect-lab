@@ -6,11 +6,12 @@
 
 body {
   font-family: "Press Start 2p", cursive;
-  background: rgb(2, 162, 152);
+  background: rgb(15, 53, 50);
   background: linear-gradient(
-    90deg,
+    45deg,
+    rgb(4, 39, 37) 100%,
     rgb(25, 216, 204) 0%,
-    rgba(33, 246, 233, 1) 100%
+    rgb(4, 39, 37) 100%
   );
 }
 
@@ -27,6 +28,7 @@ button {
   font-family: "Press Start 2p", cursive;
   font-size: 1rem;
   border: 3px solid black;
+  border-radius: 5px;
   padding: 0.5rem 1rem;
   background-color: rgba(252, 124, 124, 0.75);
   box-shadow: inset -3px -3px 0 0 rgb(252, 124, 124);
@@ -51,4 +53,11 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.clock {
+  font-size: 200px;
+  font-family: monospace;
+  width: max-content;
+  margin: 0 auto;
 }
